@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     fun registration(view: View){
         //создание нового активити (окно регистрации)
-        val registration = Intent(this,RegistrationActivity::class.java)
+        val registration = Intent(this, RegistrationActivity::class.java)
         //старт нового активити
         startActivity(registration)}
 
