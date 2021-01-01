@@ -42,7 +42,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView">
 
         <EditText
-            android:id="@+id/editName"
+            android:id="@+id/editTextTextPersonName4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -50,7 +50,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editSurname"
+            android:id="@+id/editTextTextPersonName5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -58,15 +58,15 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editUserName"
+            android:id="@+id/editTextTextEmailAddress2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Имя пользователя"
+            android:hint="Адрес электронной почты"
             android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/PasswordEdit"
+            android:id="@+id/editTextTextPassword3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -78,8 +78,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Дата рождения"
-            android:inputType="date" />
+            android:hint="Телефон"
+            android:inputType="phone" />
     </LinearLayout>
 
     <RadioGroup
@@ -91,19 +91,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
         app:layout_constraintVertical_bias="0.0">
-
         <RadioButton
-            android:id="@+id/MaleChoice"
+            android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Мужской" />
-
         <RadioButton
-            android:id="@+id/FemaleChoice"
+            android:id="@+id/radioButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Женский" />
-
     </RadioGroup>
 
     <TextView
@@ -117,39 +114,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/RegisterButton"
-        android:layout_width="416dp"
-        android:layout_height="47dp"
-        android:background="@color/registColor"
-        android:fontFamily="monospace"
-        android:text="Зарегистрироваться!"
-        android:textSize="17sp"
-        android:typeface="sans"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.778" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="280dp"
-        android:layout_height="40dp"
-        android:fontFamily="sans-serif-light"
-        android:text="Регистрация"
-        android:textColor="#874D4D"
-        android:textSize="25sp"
-        android:textStyle="italic"
-        android:typeface="monospace"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.366"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.615" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
