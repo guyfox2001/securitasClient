@@ -6,5 +6,5 @@
     <color name="background">#EADADA</color>
     <color name="registColor">#BAAFAF</color>
     <color name="groundBack">#FFE3E3</color>
-
+    <color name="underlineGround">#644444</color>
 </resources>

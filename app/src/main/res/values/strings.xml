@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">securitasClient</string>
+    <string name="restore_password"><a href="com.securitas.securitasclient.RestorePasswordActivity">Забыли пароль?</a></string>
 </resources>

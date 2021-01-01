@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,10 +10,10 @@
 
 
     <LinearLayout
-        android:id="@+id/linearLayout"
         android:layout_width="349dp"
-        android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:id="@+id/linearLayout"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,28 +22,25 @@
         app:layout_constraintVertical_bias="0.203">
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
             android:hint="Email или номер телефона"
-            android:inputType="textPersonName" />
+            android:id="@+id/editTextTextPersonName"
+            android:inputType="textPersonName"
+
+            style="@style/RefEditText" />
 
         <EditText
             android:id="@+id/editTextTextPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
             android:hint="Пароль"
+            style="@style/RefEditText"
             android:inputType="textPassword" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/link"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
-            android:text="Забыли пароль?"
-            android:textColor="#000000"
+            android:text="@string/restore_password"
+            android:textColorLink="@color/underlineGround"
             android:textSize="12sp"
             android:textStyle="italic" />
     </LinearLayout>
@@ -101,7 +99,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.583" />
 
     <TextView
         android:id="@+id/textView2"
